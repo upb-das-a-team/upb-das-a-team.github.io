@@ -2,42 +2,34 @@ import React from "react";
 
 import './Navbar.scss';
 
-import Logo from '../../Assets/Images/logo-no-background.png';
+import Logo from '../../assets/logos/logo-no-background.png'
 
 function Navbar() {
   return(
     <>
-
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="/">
+          <img className="navbar-logo" src={Logo} alt="das-a-team-logo" />
+        </a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item active">
+              <a className="nav-link" href="http://localhost:3000/home">Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="http://localhost:3000/project">Project</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="http://localhost:3000/team">Team</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </>
   )
 }
 
 export default Navbar;
-
-// {/* <nav className="navbar navbar-expand-lg navbar-light bg-light py-3">
-//           <div className="container">
-//             <a href="/">
-//               <img className="navbar-logo" src={Logo} alt="Das A Team Logo" />
-//             </a>
-//             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-//               <span className="navbar-toggler-icon"></span>
-//                <!-- You can replace the code above this line with a fontawesome icon -->
-//             </button>
-//             <div className="collapse navbar-collapse" id="navbarNav">
-//               <ul className="navbar-nav ms-auto">
-//                 <li className="nav-item">
-//                   <a className="nav-link active" aria-current="page" href="">Home</a>
-//                 </li>
-//                 {/* <li className="nav-item">
-//                   <a className="nav-link" href="#">Projekt</a>
-//                 </li>
-//                 <li className="nav-item">
-//                   <a className="nav-link" href="#">Entwicklung</a>
-//                 </li>
-//                 <li className="nav-item">
-//                   <a className="nav-link" href="#">Team</a>
-//                 </li> */}
-//               </ul>
-//             </div>
-//           </div>
-//         </nav> */}

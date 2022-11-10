@@ -3,14 +3,14 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
 
   .hero-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100%;
   }
 
   .motto {
