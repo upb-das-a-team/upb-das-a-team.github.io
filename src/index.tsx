@@ -1,17 +1,43 @@
+// ~/index.tsx
+
+// REACT DEPENDENCIES
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.scss';
-import App from './App';
+
+// REACT ROUTING
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+} from "react-router-dom";
+
+// WEB-VITALS
 import reportWebVitals from './reportWebVitals';
 
+// BOOTSTRAP STYLESHEET
 import 'bootstrap/dist/js/bootstrap';
+
+// INDEX STYLSHEET
+import './index.scss';
+
+// APP COMPONENT
+import App from './App';
+
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+]);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

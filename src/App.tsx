@@ -2,8 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.scss';
 
-import Navbar from './Components/Navbar/Navbar';
-import Footer from './Components/Footer/Footer';
+import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
 
 function App() {
 
