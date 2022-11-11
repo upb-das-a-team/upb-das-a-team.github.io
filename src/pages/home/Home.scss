@@ -1,0 +1,121 @@
+.homepage {
+  display: grid;
+  grid-template-rows: 9fr 1fr;
+
+  &-content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    &-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 2em 0 6em;
+
+      .title {
+        color: #FF5857;
+        font-weight: 900;
+      }
+
+      .motto {
+        color: #FF5857;
+        font-size: small;
+        font-weight: 500;
+        margin: -1em 0 0 0;
+        padding: 0 0 0 .2em;
+      }
+
+      .description {
+
+        &-text {
+          font-weight: 300;
+        }
+
+        .button-group {
+          display: flex;
+          flex-direction: row;
+
+          .btn {
+
+            &-project {
+              margin: 0 .5em 0 0;
+              padding: .6em 2em;
+            }
+
+            &-team {
+              margin: 0 .5em 0 0;
+              padding: .6em 2em;
+            }
+          }
+        }
+      }
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 0 0 4em;
+
+      .homepage-content-image {
+        background-image: url('../../assets/images/mitchell-luo-z1c9juteR5c-unsplash.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50em 0 0 50em;
+        min-height: 35em;
+        min-width: auto;
+      }
+    }
+  }
+
+  &-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &-left {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding: 0 4em;
+
+      .section-symbol > svg {
+        min-height: 25px;
+        min-width: 25px;
+      }
+    }
+
+    &-center {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 0 4em;
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding: 0 4em;
+
+      .footer-gitlab-icon > svg {
+        min-height: 25px;
+        min-width: 25px;
+      }
+    }
+
+    .footer-copyright-icon {
+      margin: 0 .2em;
+    }
+
+    .footer-current-year {
+      margin: 0 .2em;
+      padding: 1px 0 0 0;
+    }
+
+    .footer-team-name {
+      margin: 0 .5em;
+      padding: 1px 0 0 0;
+    }
+  }
+}
