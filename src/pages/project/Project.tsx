@@ -5,7 +5,7 @@ import './Project.scss';
 function Project() {
   return(
     <>
-      Inside Project
+      <h1>Project</h1>
     </>
   )
 }

@@ -5,7 +5,7 @@ import './NotFoundPage.scss';
 function NotFoundPage() {
   return(
     <>
-      404, What you looking for phillis?!
+      <h1>404 | Page Not Found</h1>
     </>
   )
 }

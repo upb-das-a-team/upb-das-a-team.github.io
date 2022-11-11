@@ -5,7 +5,7 @@ import './Team.scss';
 function Team() {
   return(
     <>
-      Inside Team
+      <h1>Team</h1>
     </>
   )
 }
