@@ -1,0 +1,28 @@
+.navbar {
+  padding: 0em 5em;
+
+  &-brand {
+
+    &-image {
+      max-height: 2.5em;
+      max-width: 4.5em;
+    }
+  }
+
+  &-toggler {
+    background-color: lightcoral;
+  }
+
+  &-nav {
+    margin: 0 0 0 auto;
+
+    &--divider {
+      background-color: #151515;
+      border: 1px solid #151515;
+      border-radius: 13px;
+      margin: 0 1em;
+      min-width: .1em;
+      min-height: .8em;
+    }
+  }
+}
