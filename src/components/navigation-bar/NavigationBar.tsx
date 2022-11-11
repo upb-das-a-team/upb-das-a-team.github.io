@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import { Link, useLocation } from 'react-router-dom';
 
-import Logo from '../../assets/images/logo-icon-bg-white.svg';
+import Logo from '../../assets/logo/logo-icon-bg-white.svg';
 
 import './NavigationBar.scss';
 
