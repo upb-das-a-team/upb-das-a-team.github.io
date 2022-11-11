@@ -3,18 +3,14 @@
 // REACT DEPENDENCIES
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-// WEB-VITALS
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/scss/bootstrap.scss';
+import './index.scss';
 
-// BOOTSTRAP JAVASCRIPT
-import 'bootstrap/dist/js/bootstrap';
+import AppRouter from './components/app-router/AppRouter';
 
 // INDEX STYLSHEET
 import './index.scss';
-
-// APP COMPONENT
-import App from './App';
 
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -23,7 +19,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <AppRouter />
   </React.StrictMode>
 )
 
