@@ -17,12 +17,20 @@
     margin: 0 0 0 auto;
 
     &--divider {
-      background-color: #151515;
-      border: 1px solid #151515;
+      background-color: #555555;
+      border: 1px solid #555555;
       border-radius: 13px;
       margin: 0 1em;
       min-width: .1em;
       min-height: .8em;
+    }
+
+    .activated > .nav-link {
+      color: #FF5857;
+    }
+
+    .nav-link:hover {
+      color: #CB4646;
     }
   }
 }
