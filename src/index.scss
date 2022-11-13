@@ -25,17 +25,21 @@ code {
   width: auto;
 }
 
+// GLOBAL VARIABLES
+$color-primary: #FF5857;
+$color-primary-dark: #CB4646;
+
 
 // GLOBAL CUSTOM STYLES
 .btn-primary-custom {
-  background-color: #FF5857;
-  border: #FF5857;
+  background-color: $color-primary;
+  border: $color-primary;
   color: #FFFFFF;
 }
 
 .btn-primary-custom:hover {
-  background-color: #CB4646;
-  border: #CB4646;
+  background-color: color-primary-dark;
+  border: color-primary-dark;
   color: #FFFFFF;
 }
 
@@ -57,5 +61,5 @@ code {
 }
 
 .custom-link:hover {
-  color: #FF5857;
+  color: $color-primary;
 }
