@@ -1,0 +1,11 @@
+$color-primary: #FF5857;
+
+.primary {
+  color: $color-primary !important;
+  background-color: $color-primary !important;
+  border-color: $color-primary !important;
+}
+
+.lg-timeline-connector {
+  min-height: 10em !important;
+}
