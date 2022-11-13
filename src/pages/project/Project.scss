@@ -1,0 +1,50 @@
+$color-primary: #FF5857;
+
+.projectpage {
+
+  &-header {
+    margin: 4em 0;
+    
+    .title {
+      color: $color-primary;
+      font-weight: 900;
+      padding-bottom: .8em;
+    }
+
+    .description {
+      column-count: 2;
+      column-gap: 2em;
+    }
+  }
+
+  &-timeline {
+    margin: 4em 0 2em 0;
+
+    .title {
+      font-weight: 500;
+      padding-bottom: .6em;
+    }
+
+    .description {
+      column-count: 2;
+      column-gap: 2em;
+    }
+  }
+
+  .project-gantt-chart {
+    margin: 0 0 5em 0;
+  }
+
+  &-development {
+
+    .title {
+      font-weight: 500;
+      padding-bottom: .6em;
+    }
+
+    .description {
+      column-count: 2;
+      column-gap: 2em;
+    }
+  }
+}
