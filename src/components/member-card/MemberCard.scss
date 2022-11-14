@@ -1,0 +1,49 @@
+.member {
+
+  &-card {
+    padding: 1em;
+    max-width: 20em;
+
+    &--header {
+
+      .member-image {
+          max-height: 15em;
+          max-width: 15em;
+        &__img {
+          border-radius: 100em;
+          max-height: 8em;
+          max-width: 8em;
+        }
+      }
+
+      .member-socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        svg {
+          margin: .2em .5em;
+          min-height: 1.5em;
+          min-width: 1.5em;
+        }
+      }
+
+    }
+
+    &--content {
+
+      .member-name {
+
+      }
+
+      .member-role {
+
+      }
+
+    }
+
+    &--footer {
+
+    }
+  }
+}
