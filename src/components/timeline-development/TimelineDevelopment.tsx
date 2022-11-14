@@ -13,73 +13,116 @@ import TimelineCard from "./timeline-card";
 import './TimelineDevelopment.scss';
 
 function TimelineDevelopment() {
+  const sprints = [
+    {
+      sprintNr: 1,
+      date: '27. October 22 - 09. November 22',
+      alignment: 'right',
+      title: 'Sprint 01',
+      subtitle: 'Anfertigung sämtliche Dokumente für den Auftraggeber',
+      text: `
+      Ziel des Sprints ist die Erstellung und Fertigung 
+      sämtlicher Dokumente, wie Produkt Angebot 
+      (Nach Kundenanforderungen), QA Dokument und GUI Entwurf.
+      `
+    },
+    {
+      sprintNr: 2,
+      date: '10. November 22 - 23. November 22',
+      alignment: 'left',
+      title: 'Sprint 02',
+      subtitle: 'Anfertigung der interne Dokumente',
+      text: `
+      Nach diesem Sprint erwarten wir eine entwickelte 
+      Version des Smartphone-Beobachters GUI, und Spiellogik (Server). 
+      Zusätzlich werden Dokumente angefertigt wie Produkt Backlog und 
+      Interface Dokument
+      `
+    },
+    {
+      sprintNr: 3,
+      date: '24. November 22 - 07. December 22',
+      alignment: 'right',
+      title: 'Sprint 03',
+      subtitle: 'Anlieferung der Applikationskomponenten',
+      text: `
+      Nach dem drittem Sprint wird sowohl ein Smartphone-Beobachter, 
+      Controller als auch ein Spielserver angeliefert. 
+      Parallel erwarten wir die Anfertigung des DevOps-Dokuments.
+      `
+    },
+    {
+      sprintNr: 4,
+      date: '08. December 22 - 21. December 22',
+      alignment: 'left',
+      title: 'Sprint 04',
+      subtitle: 'Erschaffung der Messeversion der Applikation',
+      text: `
+      Ziel des Sprints ist die Entwicklung und Implementierung der 
+      Messeversion der Applikation. Im Rahmen dieser Version sind 
+      natürlich der PC-Teilnehmer und Server GUI enthalten.
+      `
+    },
+    {
+      sprintNr: 5,
+      date: '22. December 22 - 04. January 23',
+      alignment: 'right',
+      title: 'Sprint 05',
+      subtitle: 'Entwicklung der KI und Abgabe des PC-Teilnehmer',
+      text: `
+      Nach diesem Sprint ist die Abgabe des PC-Teilnehmer Controller 
+      und die erste Version des künslichen Intelligenz zu erwarten.
+      `
+    },
+    {
+      sprintNr: 6,
+      date: '05. January 23 - 18. January 23',
+      alignment: 'left',
+      title: 'Sprint 06',
+      subtitle: 'Anlieferung der Internetseite für die Präsentation',
+      text: `
+      Ziel dieses Sprints ist die Entwicklung und Anfertigung der 
+      Internetseit für eine vollständige Präsentation des Produkts, 
+      und die letzte Implementierungen/Tests des der Applikation.
+      `
+    },
+    {
+      sprintNr: 7,
+      date: '19. January 23 - 01. February 23',
+      alignment: 'right',
+      title: 'Sprint 07',
+      subtitle: 'Abgabe der Turnierversion',
+      text: `
+      Mit Abschluss dieses Sprints erfolgt die Implementierung der 
+      Turnierversion der Applikation, und die Abschlusspräsentation.
+      `
+    }
+  ];
+
   return (
     <Timeline position="alternate">
-    <TimelineItem>
-      <TimelineOppositeContent color="text.secondary">
-        dd-mm-yyyy - dd-mm-yyyy
-      </TimelineOppositeContent>
-      <TimelineSeparator>
-        <TimelineDot className="primary" />
-        <TimelineConnector className="primary lg-timeline-connector" />
-      </TimelineSeparator>
-      <TimelineContent>
-        <TimelineCard
-          alignment='right'
-          title='Sprint [Nr]'
-          subtitle='Sprint Result'
-          text='Sprint Goals'/>
-      </TimelineContent>
-    </TimelineItem>
-    <TimelineItem>
-      <TimelineOppositeContent color="text.secondary">
-        dd-mm-yyyy - dd-mm-yyyy
-      </TimelineOppositeContent>
-      <TimelineSeparator>
-        <TimelineDot className="primary" />
-        <TimelineConnector className="primary lg-timeline-connector" />
-      </TimelineSeparator>
-      <TimelineContent>
-        <TimelineCard
-          alignment='left'
-          title='Sprint [Nr]'
-          subtitle='Sprint Result'
-          text='Sprint Goals'/>
-      </TimelineContent>
-    </TimelineItem>
-    <TimelineItem>
-      <TimelineOppositeContent color="text.secondary">
-        dd-mm-yyyy - dd-mm-yyyy
-      </TimelineOppositeContent>
-      <TimelineSeparator>
-        <TimelineDot className="primary" />
-        <TimelineConnector className="primary lg-timeline-connector" />
-      </TimelineSeparator>
-      <TimelineContent>
-        <TimelineCard
-          alignment='right'
-          title='Sprint [Nr]'
-          subtitle='Sprint Result'
-          text='Sprint Goals'/>
-      </TimelineContent>
-    </TimelineItem>
-    <TimelineItem>
-      <TimelineOppositeContent color="text.secondary">
-        dd-mm-yyyy - dd-mm-yyyy
-      </TimelineOppositeContent>
-      <TimelineSeparator>
-        <TimelineDot className="primary" />
-        <TimelineConnector className="primary lg-timeline-connector" />
-      </TimelineSeparator>
-      <TimelineContent>
-        <TimelineCard
-          alignment='left'
-          title='Sprint [Nr]'
-          subtitle='Sprint Result'
-          text='Sprint Goals'/>
-      </TimelineContent>
-    </TimelineItem>
-  </Timeline>
+      {sprints.map((sprint) => {
+        return (
+          <TimelineItem key={sprint.sprintNr}>
+            <TimelineOppositeContent color="text.secondary">
+              {sprint.date}
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot className="primary" />
+              <TimelineConnector className="primary lg-timeline-connector" />
+            </TimelineSeparator>
+            <TimelineContent>
+              <TimelineCard
+                alignment={sprint.alignment}
+                title={sprint.title}
+                subtitle={sprint.subtitle}
+                text={sprint.text}
+                />
+            </TimelineContent>
+          </TimelineItem>
+        );
+      })}
+    </Timeline>
   );
 }
 
