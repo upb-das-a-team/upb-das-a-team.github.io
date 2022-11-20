@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import './NotFoundPage.scss';
 
 function NotFoundPage() {
-  const windowHeight = window.innerHeight - 60;
+  const windowHeight = window.innerHeight - 80;
   console.log(windowHeight);
 
   return(
