@@ -1,6 +1,7 @@
 // ~/index.scss
 
 // GLOBAL IMPORTS
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 body {
@@ -21,45 +22,51 @@ code {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  // min-height: 100vh;
   width: auto;
 }
 
-// GLOBAL VARIABLES
-$color-primary: #FF5857;
-$color-primary-dark: #CB4646;
+// GLOBAL CUSTOM VARIABLES
+$primary-red: #FF5857;
+$primary-red-dark: #CB4646;
+
+$primary-grey: #6c757d;
+$primary-grey-dark: #5a6268;
+
+$white: #FFFFFF;
+$black: #000000;
 
 
 // GLOBAL CUSTOM STYLES
 .btn-primary-custom {
-  background-color: $color-primary;
-  border: $color-primary;
-  color: #FFFFFF;
+  background-color: $primary-red;
+  border: $primary-red;
+  color: $white;
 }
 
 .btn-primary-custom:hover {
-  background-color: color-primary-dark;
-  border: color-primary-dark;
-  color: #FFFFFF;
+  background-color: $primary-red-dark;
+  border: $primary-red-dark;
+  color: $white;
 }
 
 .btn-secondary-custom {
-  background-color: #6c757d;
-  border-color: #6c757d;
-  color: #fff;
+  background-color: $primary-grey;
+  border-color: $primary-grey;
+  color: $white;
 }
 
 .btn-secondary-custom:hover {
-  background-color: #5a6268;
-  border-color: #545b62;
-  color: #fff;
+  background-color: $primary-grey-dark;
+  border-color: $primary-grey-dark;
+  color: $white;
 }
 
 .custom-link {
-  color: #000000;
+  color: $black;
   padding: 0 2em;
 }
 
 .custom-link:hover {
-  color: $color-primary;
+  color: $primary-red;
 }

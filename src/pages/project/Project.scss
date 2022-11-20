@@ -1,4 +1,4 @@
-$color-primary: #FF5857;
+@import '../../index.scss';
 
 .projectpage {
 
@@ -6,7 +6,7 @@ $color-primary: #FF5857;
     margin: 4em 0;
     
     .title {
-      color: $color-primary;
+      color: $primary-red;
       font-weight: 900;
       padding-bottom: .8em;
     }
