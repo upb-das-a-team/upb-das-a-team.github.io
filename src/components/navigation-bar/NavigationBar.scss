@@ -1,3 +1,5 @@
+@import '../../index.scss';
+
 .navbar {
   padding: 0em 5em;
 
@@ -16,21 +18,38 @@
   &-nav {
     margin: 0 0 0 auto;
 
+    @include media-breakpoint-down(lg) {
+      flex-direction: row !important;
+      justify-content: space-around !important;
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: flex;
+      flex-direction: column !important;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+    }
+
     &--divider {
-      background-color: #555555;
-      border: 1px solid #555555;
+      background-color: $primary-grey;
+      border: 1px solid $primary-grey;
       border-radius: 13px;
       margin: 0 1em;
       min-width: .1em;
       min-height: .8em;
+
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
     }
 
     .activated > .nav-link {
-      color: #FF5857;
+      color: $primary-red;
     }
 
     .nav-link:hover {
-      color: #CB4646;
+      color: $primary-red-dark;
     }
   }
 }
