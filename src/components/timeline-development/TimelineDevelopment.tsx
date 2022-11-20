@@ -16,7 +16,8 @@ function TimelineDevelopment() {
   const sprints = [
     {
       sprintNr: 1,
-      date: '27. October 22 - 09. November 22',
+      startDate: '27. October 22',
+      endDate: '09. November 22',
       alignment: 'right',
       title: 'Sprint 01',
       subtitle: 'Anfertigung sämtliche Dokumente für den Auftraggeber',
@@ -28,7 +29,8 @@ function TimelineDevelopment() {
     },
     {
       sprintNr: 2,
-      date: '10. November 22 - 23. November 22',
+      startDate: '10. November 22',
+      endDate: '23. November 22',
       alignment: 'left',
       title: 'Sprint 02',
       subtitle: 'Anfertigung der interne Dokumente',
@@ -41,7 +43,8 @@ function TimelineDevelopment() {
     },
     {
       sprintNr: 3,
-      date: '24. November 22 - 07. December 22',
+      startDate: '24. November 22',
+      endDate: '07. December 22',
       alignment: 'right',
       title: 'Sprint 03',
       subtitle: 'Anlieferung der Applikationskomponenten',
@@ -53,7 +56,8 @@ function TimelineDevelopment() {
     },
     {
       sprintNr: 4,
-      date: '08. December 22 - 21. December 22',
+      startDate: '08. December 22',
+      endDate: '21. December 22',
       alignment: 'left',
       title: 'Sprint 04',
       subtitle: 'Erschaffung der Messeversion der Applikation',
@@ -65,7 +69,8 @@ function TimelineDevelopment() {
     },
     {
       sprintNr: 5,
-      date: '22. December 22 - 04. January 23',
+      startDate: '22. December 22',
+      endDate: '04. January 23',
       alignment: 'right',
       title: 'Sprint 05',
       subtitle: 'Entwicklung der KI und Abgabe des PC-Teilnehmer',
@@ -76,7 +81,8 @@ function TimelineDevelopment() {
     },
     {
       sprintNr: 6,
-      date: '05. January 23 - 18. January 23',
+      startDate: '05. January 23',
+      endDate: '18. January 23',
       alignment: 'left',
       title: 'Sprint 06',
       subtitle: 'Anlieferung der Internetseite für die Präsentation',
@@ -88,7 +94,8 @@ function TimelineDevelopment() {
     },
     {
       sprintNr: 7,
-      date: '19. January 23 - 01. February 23',
+      startDate: '19. January 23',
+      endDate: '01. February 23',
       alignment: 'right',
       title: 'Sprint 07',
       subtitle: 'Abgabe der Turnierversion',
@@ -105,7 +112,11 @@ function TimelineDevelopment() {
         return (
           <TimelineItem key={sprint.sprintNr}>
             <TimelineOppositeContent color="text.secondary">
-              {sprint.date}
+              <div className="timeline-date ">
+                <div className={"timeline-date-startDate-" + sprint.alignment}>{sprint.startDate}</div>
+                <div className={"timeline-date-divider-" + sprint.alignment}> - </div>
+                <div className={"timeline-date-endDate-" + sprint.alignment}>{sprint.endDate}</div>
+              </div>
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot className="primary" />

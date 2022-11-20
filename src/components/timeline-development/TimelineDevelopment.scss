@@ -1,11 +1,60 @@
-$color-primary: #FF5857;
+@import '../../index.scss';
+
+.timeline-date {
+  display: flex;
+  flex-direction: row;
+
+  &-startDate-right {
+    margin: 0 0 0 auto;
+  }
+
+  &-divider-right {
+    margin: 0 .5em;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+  &-endDate-right {
+    
+  }
+
+  &-startDate-left {
+    margin: 0;
+  }
+
+  &-divider-left {
+    margin: 0 .5em;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+  &-endDate-left {
+
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: small;
+  }
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
+}
 
 .primary {
-  color: $color-primary !important;
-  background-color: $color-primary !important;
-  border-color: $color-primary !important;
+  color: $primary-red !important;
+  background-color: $primary-red !important;
+  border-color: $primary-red !important;
 }
 
 .lg-timeline-connector {
   min-height: 15em !important;
+
+  @include media-breakpoint-down(md) {
+    min-height: 25em !important;
+  }
 }
