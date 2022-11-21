@@ -12,7 +12,7 @@ function MemberCard(props: any) {
         <div className="container">
           <div className="row">
             <div className="col-6 member-image">
-              <img className="member-image__img" src={props.img} alt={props.name} />
+              <img className="member-image__img" src={require('../../assets/identicons/' + props.img)} alt={props.name} />
             </div>
             <div className="col-6 member-socials">
               <div className="email">

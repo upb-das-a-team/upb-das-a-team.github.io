@@ -7,23 +7,23 @@ import './Team.scss';
 function Team() {
   const members = [
     {
-      img: '',
-      name: 'Robin ekmen',
+      img: 'RobinEkmen.png',
+      name: 'Robin Ekmen',
       email: 'rekmen@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/rekmen',
       role: 'Scrum Master, Developer',
       motto: 'lorem ipsum'
     },
     {
-      img: '',
-      name: 'Shayan mahtabi',
+      img: 'ShayanMahtabi.png',
+      name: 'Shayan Mahtabi',
       email: 'smahtabi@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/smahtabi',
       role: 'Product Owner, Developer',
       motto: 'lorem ipsum'
     },
     {
-      img: '',
+      img: 'NiklasBäumker.png',
       name: 'Niklas Bäumker',
       email: 'niba@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/niba',
@@ -31,7 +31,7 @@ function Team() {
       motto: 'lorem ipsum'
     },
     {
-      img: '',
+      img: 'LukasKrämer.png',
       name: 'Lukas Krämer',
       email: 'lukr@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/lukr',
@@ -39,7 +39,7 @@ function Team() {
       motto: 'lorem ipsum'
     },
     {
-      img: '',
+      img: 'JakobKramer.png',
       name: 'Jakob Kramer',
       email: 'jkramer3@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/jkramer3',
@@ -47,7 +47,7 @@ function Team() {
       motto: 'lorem ipsum'
     },
     {
-      img: '',
+      img: 'AlexanderScheubel.png',
       name: 'Leo Alexander Scheubel',
       email: 'lscheub@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/lscheub',
@@ -55,7 +55,7 @@ function Team() {
       motto: 'lorem ipsum'
     },
     {
-      img: '',
+      img: 'ChristophRode.png',
       name: 'Christoph Rode',
       email: 'rodec@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/rodec',
@@ -63,7 +63,7 @@ function Team() {
       motto: 'lorem ipsum'
     },
     {
-      img: '',
+      img: 'AndreasSittner.png',
       name: 'Andreas Sittner',
       email: 'asittner@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/asittner',
@@ -71,7 +71,7 @@ function Team() {
       motto: 'lorem ipsum'
     },
     {
-      img: '',
+      img: 'KaiZingler.png',
       name: 'Kai Zingler',
       email: 'kzingler@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/kzingler',
@@ -79,7 +79,7 @@ function Team() {
       motto: 'lorem ipsum'
     },
     {
-      img: '',
+      img: 'YittingJiang.png',
       name: 'Yitting Jiang',
       email: 'yitting@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/yitting',
@@ -87,7 +87,7 @@ function Team() {
       motto: 'lorem ipsum'
     },
     {
-      img: '',
+      img: 'CharlieLegrandDonfack.png',
       name: 'Charlie Legrand Donfack',
       email: 'donfack@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/donfack',
@@ -95,7 +95,7 @@ function Team() {
       motto: 'lorem ipsum'
     },
     {
-      img: '',
+      img: 'Joel-MauriceKessler.png',
       name: 'Joel-Maurice Keßler',
       email: 'kessljo@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/kessljo',
@@ -103,7 +103,7 @@ function Team() {
       motto: 'lorem ipsum'
     },
     {
-      img: '',
+      img: 'GhaithHalima.png',
       name: 'Ghaith Halima',
       email: 'ghalima@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/ghalima',
