@@ -11,6 +11,7 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineCard from "./timeline-card";
 
 import './TimelineDevelopment.scss';
+import { render } from "react-dom";
 
 function TimelineDevelopment() {
   const sprints = [
