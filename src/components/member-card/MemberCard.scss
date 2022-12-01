@@ -1,8 +1,10 @@
+@import '../../index.scss';
+
 .member {
 
   &-card {
     padding: 1em;
-    max-width: 10em;
+    max-width: 18em !important;
 
     &--header {
 
@@ -22,27 +24,12 @@
         justify-content: flex-end;
 
         svg {
+          color: $primary-red;
           margin: .2em .5em;
           min-height: 1.5em;
           min-width: 1.5em;
         }
       }
-
-    }
-
-    &--content {
-
-      .member-name {
-
-      }
-
-      .member-role {
-
-      }
-
-    }
-
-    &--footer {
 
     }
   }

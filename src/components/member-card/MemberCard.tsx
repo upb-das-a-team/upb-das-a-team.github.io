@@ -16,12 +16,12 @@ function MemberCard(props: any) {
             </div>
             <div className="col-6 member-socials">
               <div className="email">
-                <a href={props.email}>
+                <a className="email-icon" href={"mailto: " + props.email}>
                   <AiOutlineMail />
                 </a>
               </div>
               <div className="gitlab">
-                <a href={props.gitlab}>
+                <a className="gitlab-icon" href={props.gitlab} target={"_blank"}>
                   <FiGitlab />
                 </a>
               </div>
@@ -30,7 +30,7 @@ function MemberCard(props: any) {
         </div>
       </div>
       <div className="row member-card--content">
-        <h3 className="member-name">
+        <h3 className="member-name mt-3">
           {props.name}
         </h3>
         <p className="member-role">
