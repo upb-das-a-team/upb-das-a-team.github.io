@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 import './Project.scss';
 
 import GanttChart from "../../components/gantt-chart/GanttChart";
 import TimelineDevelopment from "../../components/timeline-development/TimelineDevelopment";
+import { Link } from "react-router-dom";
+import { ImSection } from "react-icons/im";
+import { AiOutlineCopyrightCircle, AiOutlineGitlab } from "react-icons/ai";
 
 function Project() {
+  const [currentDate, setCurrentDate] = useState(new Date())
 
   return(
     <>
@@ -58,6 +62,26 @@ function Project() {
             <TimelineDevelopment />
           </div>
         </div>
+
+        <div className="projectpage-footer">
+        <div className="projectpage-footer-left">
+          <Link className="custom-link section-symbol" to={'/impressum'}>
+            <ImSection />
+          </Link>
+        </div>
+        <div className="projectpage-footer-center">
+          <div className="footer-copyright-icon"><AiOutlineCopyrightCircle /></div>
+          <div className="footer-current-year">{currentDate.getFullYear()}</div>
+          <div className="footer-team-name">Das A Team</div>
+        </div>
+        <div className="projectpage-footer-right">
+          <a className= "custom-link" href="https://git.cs.uni-paderborn.de/swtpra2223/gruppe11/" target={'_blank'}>
+            <div className="footer-gitlab-icon">
+              <AiOutlineGitlab />
+            </div>
+          </a>
+        </div>
+      </div>
       </div>
     </>
   )
