@@ -1,1 +1,37 @@
 @import '../../index.scss';
+
+.impressum-page {
+  margin: 0 0 8em 0;
+  
+  .card {
+    position: fixed;
+    width: 24em;
+
+    .role {
+      font-size: xx-small;
+      margin: 0 0 0 .5em;
+    }
+  }
+
+  .urheberrecht {
+    margin: 2em 0 1em 0;
+  }
+
+  @include media-breakpoint-down(lg) {
+
+    .content {
+      .row {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .card {
+      margin: 2em 0;
+      position: inherit;
+
+      .role {
+        display: none;
+      }
+    }
+  }
+}
