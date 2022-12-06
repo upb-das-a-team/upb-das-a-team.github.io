@@ -22,41 +22,51 @@ code {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  // min-height: 100vh;
   width: auto;
 }
+
+// GLOBAL CUSTOM VARIABLES
+$primary-red: #FF5857;
+$primary-red-dark: #CB4646;
+
+$primary-grey: #6c757d;
+$primary-grey-dark: #5a6268;
+
+$white: #FFFFFF;
+$black: #000000;
 
 
 // GLOBAL CUSTOM STYLES
 .btn-primary-custom {
-  background-color: #FF5857;
-  border: #FF5857;
-  color: #FFFFFF;
+  background-color: $primary-red;
+  border: $primary-red;
+  color: $white;
 }
 
 .btn-primary-custom:hover {
-  background-color: #CB4646;
-  border: #CB4646;
-  color: #FFFFFF;
+  background-color: $primary-red-dark;
+  border: $primary-red-dark;
+  color: $white;
 }
 
 .btn-secondary-custom {
-  background-color: #6c757d;
-  border-color: #6c757d;
-  color: #fff;
+  background-color: $primary-grey;
+  border-color: $primary-grey;
+  color: $white;
 }
 
 .btn-secondary-custom:hover {
-  background-color: #5a6268;
-  border-color: #545b62;
-  color: #fff;
+  background-color: $primary-grey-dark;
+  border-color: $primary-grey-dark;
+  color: $white;
 }
 
 .custom-link {
-  color: #000000;
+  color: $black;
   padding: 0 2em;
 }
 
 .custom-link:hover {
-  color: #FF5857;
+  color: $primary-red;
 }

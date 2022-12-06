@@ -4,15 +4,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import 'bootstrap/scss/bootstrap.scss';
+
 import './index.scss';
 
 import AppRouter from './components/app-router/AppRouter';
 
+// BOOTSTRAP JAVASCRIPT
+import '../node_modules/bootstrap/dist/js/bootstrap';
+
 // INDEX STYLSHEET
 import './index.scss';
-
-// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
