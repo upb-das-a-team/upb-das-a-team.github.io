@@ -134,11 +134,11 @@ function Team() {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h1>Das (A) Team</h1>
+            <h1 className="teampage-header">Das (A) Team</h1>
           </div>
         </div>
         <div className="row">
-          <div className="col-12">
+          <div className="col-12 teampage-description">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
             Corporis libero quia consequatur quae animi perferendis numquam, 
             accusamus dolores vel, quo sunt officia quas quisquam eius 
@@ -226,18 +226,18 @@ function Team() {
         </div>
       </div>
 
-      <div className="homepage-footer">
-        <div className="homepage-footer-left">
+      <div className="teampage-footer">
+        <div className="teampage-footer-left">
           <Link className="custom-link section-symbol" to={'/impressum'}>
             <ImSection />
           </Link>
         </div>
-        <div className="homepage-footer-center">
+        <div className="teampage-footer-center">
           <div className="footer-copyright-icon"><AiOutlineCopyrightCircle /></div>
           <div className="footer-current-year">{currentDate.getFullYear()}</div>
           <div className="footer-team-name">Das A Team</div>
         </div>
-        <div className="homepage-footer-right">
+        <div className="teampage-footer-right">
           <a className= "custom-link" href="https://git.cs.uni-paderborn.de/swtpra2223/gruppe11/" target={'_blank'}>
             <div className="footer-gitlab-icon">
               <AiOutlineGitlab />

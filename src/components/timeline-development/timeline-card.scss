@@ -1,0 +1,31 @@
+@import '../../index.scss';
+
+.card {
+  max-width: 25em;
+
+  &-title {
+
+  }
+
+  &-subtitle {
+
+  }
+
+  &-text {
+    @include media-breakpoint-down(lg) {
+      font-size: medium;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: small;
+    }
+  }
+}
+
+.card-left {
+  margin: 0 0 0 auto;
+}
+
+.card-right {
+  margin: 0;
+}

@@ -1,1 +1,175 @@
 @import '../../index.scss';
+
+.projectpage {
+  margin: 4em 0 4em 0;
+
+  p {
+    background-color: $white;
+  }
+
+  &-header {
+    margin: 4em 0;
+    
+    .title {
+      color: $primary-red;
+      font-weight: 900;
+      padding-bottom: .8em;
+
+      @include media-breakpoint-down(sm) {
+        font-weight: 500;
+        padding-bottom: 0.4em;
+      }
+    }
+
+    .description {
+      column-count: 2;
+      column-gap: 2em;
+
+      @include media-breakpoint-down(sm) {
+        column-count: 1;
+        font-size: small;
+      }
+    }
+  }
+
+  &-timeline {
+    margin: 4em 0 2em 0;
+
+    .title {
+      font-weight: 500;
+      padding-bottom: .6em;
+    }
+
+    .description {
+      column-count: 2;
+      column-gap: 2em;
+
+      @include media-breakpoint-down(sm) {
+        column-count: 1;
+        font-size: small;
+      }
+    }
+  }
+
+  .project-gantt-chart {
+    margin: 0 0 2.5em 0;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+
+  .project-gantt-chart-information {
+    display: none;
+
+    @include media-breakpoint-down(lg) {
+      display: flex;
+    }
+  }
+
+  &-development {
+
+    .title {
+      font-weight: 500;
+      padding-bottom: .6em;
+    }
+
+    .description {
+      column-count: 2;
+      column-gap: 2em;
+
+      @include media-breakpoint-down(sm) {
+        column-count: 1;
+        font-size: small;
+      }
+    }
+  }
+
+  &-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &-left {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding: 0 4em;
+
+      @include media-breakpoint-down(lg) {
+        padding: 0 .5em;
+      }
+
+      @include media-breakpoint-down(md) {
+        align-items: center;
+        padding: 0 .1em;
+      }
+
+      .section-symbol > svg {
+        min-height: 25px;
+        min-width: 25px;
+
+        @include media-breakpoint-down(sm) {
+          min-height: 20px;
+          min-width: 20px;
+        }
+      }
+    }
+
+    &-center {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 0 4em;
+
+      @include media-breakpoint-down(lg) {
+        padding: 0 .1em;
+      }
+
+      @include media-breakpoint-down(md) {
+        align-items: center;
+        flex-direction: column;
+        font-size: small;
+      }
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding: 0 4em;
+
+      @include media-breakpoint-down(lg) {
+        padding: 0 .5em;
+      }
+
+      @include media-breakpoint-down(md) {
+        align-items: center;
+        padding: 0 .1em;
+      }
+
+      .footer-gitlab-icon > svg {
+        min-height: 25px;
+        min-width: 25px;
+
+        @include media-breakpoint-down(sm) {
+          min-height: 20px;
+          min-width: 20px;
+        }
+      }
+    }
+
+    .footer-copyright-icon {
+      margin: 0 .2em;
+    }
+
+    .footer-current-year {
+      margin: 0 .2em;
+      padding: 1px 0 0 0;
+    }
+
+    .footer-team-name {
+      margin: 0 .5em;
+      padding: 1px 0 0 0;
+    }
+  }
+}
