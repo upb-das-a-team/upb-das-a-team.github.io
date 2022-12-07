@@ -3,7 +3,15 @@ import React from "react";
 import './timeline-card.scss';
 
 function TimelineCard(props: any) {
-  const cardAlignment = (props.alignment === 'left') ? 'card-left' : 'card-right'
+  var cardAlignment = ''
+
+  if (props.alignment === 'left') {
+    cardAlignment = 'card-left'
+  } else if (props.alignment === 'right') {
+    cardAlignment = 'card-right'
+  } else {
+    cardAlignment = ''
+  }
 
   return (
     <div className={"card " + cardAlignment}>

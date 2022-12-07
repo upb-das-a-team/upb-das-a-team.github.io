@@ -13,7 +13,7 @@ function Team() {
   const members01 = [
     {
       img: 'RobinEkmen.png',
-      name: 'Robin Ekmen',
+      name: 'R. Ekmen',
       email: 'rekmen@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/rekmen',
       role: 'Scrum Master, Developer',
@@ -21,7 +21,7 @@ function Team() {
     },
     {
       img: 'ShayanMahtabi.png',
-      name: 'Shayan Mahtabi',
+      name: 'S. Mahtabi',
       email: 'smahtabi@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/smahtabi',
       role: 'Product Owner, Developer',
@@ -29,7 +29,7 @@ function Team() {
     },
     {
       img: 'NiklasBäumker.png',
-      name: 'Niklas Bäumker',
+      name: 'N. Bäumker',
       email: 'niba@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/niba',
       role: 'Quality Manager, Developer',
@@ -40,7 +40,7 @@ function Team() {
   const members02 = [
     {
       img: 'LukasKrämer.png',
-      name: 'Lukas Krämer',
+      name: 'L. Krämer',
       email: 'lukr@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/lukr',
       role: 'Quality Manager, Developer',
@@ -48,7 +48,7 @@ function Team() {
     },
     {
       img: 'JakobKramer.png',
-      name: 'Jakob Kramer',
+      name: 'J. Kramer',
       email: 'jkramer3@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/jkramer3',
       role: 'Test Manager, Developer',
@@ -56,7 +56,7 @@ function Team() {
     },
     {
       img: 'AlexanderScheubel.png',
-      name: 'Leo Alexander Scheubel',
+      name: 'L. A. Scheubel',
       email: 'lscheub@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/lscheub',
       role: 'Test Manager, Developer',
@@ -67,7 +67,7 @@ function Team() {
   const members03 = [
     {
       img: 'ChristophRode.png',
-      name: 'Christoph Rode',
+      name: 'C. Rode',
       email: 'rodec@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/rodec',
       role: 'Product Manager, Developer',
@@ -75,7 +75,7 @@ function Team() {
     },
     {
       img: 'AndreasSittner.png',
-      name: 'Andreas Sittner',
+      name: 'A. Sittner',
       email: 'asittner@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/asittner',
       role: 'Tools Manager, Developer',
@@ -83,7 +83,7 @@ function Team() {
     },
     {
       img: 'KaiZingler.png',
-      name: 'Kai Zingler',
+      name: 'K. Zingler',
       email: 'kzingler@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/kzingler',
       role: 'Tools Representative, Developer',
@@ -94,7 +94,7 @@ function Team() {
   const members04 = [
     {
       img: 'YittingJiang.png',
-      name: 'Yitting Jiang',
+      name: 'Y. Jiang',
       email: 'yitting@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/yitting',
       role: 'Documents Manager, Developer',
@@ -102,7 +102,7 @@ function Team() {
     },
     {
       img: 'CharlieLegrandDonfack.png',
-      name: 'Charlie Legrand Donfack',
+      name: 'C. L. Donfack',
       email: 'donfack@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/donfack',
       role: 'Documents Representative, Developer',
@@ -110,7 +110,7 @@ function Team() {
     },
     {
       img: 'Joel-MauriceKessler.png',
-      name: 'Joel-Maurice Keßler',
+      name: 'J. M. Keßler',
       email: 'kessljo@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/kessljo',
       role: 'Comittee Member, Developer',
@@ -121,7 +121,7 @@ function Team() {
   const members05 = [
     {
       img: 'GhaithHalima.png',
-      name: 'Ghaith Halima',
+      name: 'G. Halima',
       email: 'ghalima@mail.uni-paderborn.de',
       gitlab: 'https://git.cs.uni-paderborn.de/ghalima',
       role: 'Developer',
@@ -134,15 +134,14 @@ function Team() {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h1 className="teampage-header">Das (A) Team</h1>
+            <h1 className="teampage-header">Das A Team</h1>
           </div>
         </div>
         <div className="row">
           <div className="col-12 teampage-description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            Corporis libero quia consequatur quae animi perferendis numquam, 
-            accusamus dolores vel, quo sunt officia quas quisquam eius 
-            ad nemo doloribus ipsum odio!
+            Unser Team besteht aus qualifizierte Entwickler und Manager, die in einer flache Hierarchie
+            arbeiten. Sie sind fähig jeden Wunsch des Kunden zu erfüllen. Hier finden Sie die Mitglieder
+            unseres Teams
           </div>
         </div>
       </div>

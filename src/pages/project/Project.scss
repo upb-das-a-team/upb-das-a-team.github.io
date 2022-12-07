@@ -41,13 +41,22 @@
     }
 
     .description {
-      column-count: 2;
       column-gap: 2em;
 
       @include media-breakpoint-down(sm) {
         column-count: 1;
         font-size: small;
       }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .phases {
+      font-size: x-small;
+    }
+
+    .divider {
+      display: none;
     }
   }
 
@@ -171,5 +180,13 @@
       margin: 0 .5em;
       padding: 1px 0 0 0;
     }
+  }
+}
+
+.project-sprint-timeline {
+  padding: 0;
+
+  @include media-breakpoint-down(sm) {
+    margin: 0 0 0 -5em !important;
   }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
@@ -13,7 +13,35 @@ import TimelineCard from "./timeline-card";
 import './TimelineDevelopment.scss';
 import { render } from "react-dom";
 
+interface Size {
+  width: number;
+  height: number;
+}
+
 function TimelineDevelopment() {
+  const size: Size = useWindowSize();
+
+  function useWindowSize(): Size {
+    const [windowSize, setWindowSize] = useState<Size>({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+    useEffect(() => {
+      function handleResize() {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
+      window.addEventListener("resize", handleResize);
+      handleResize();
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+    
+    return windowSize;
+  }
+  
+
   const sprints = [
     {
       sprintNr: 1,
@@ -108,12 +136,12 @@ function TimelineDevelopment() {
   ];
 
   return (
-    <Timeline position="alternate">
+    <Timeline position={(size.width < 576) ? "right" : "alternate"}>
       {sprints.map((sprint) => {
         return (
           <TimelineItem key={sprint.sprintNr}>
             <TimelineOppositeContent color="text.secondary">
-              <div className="timeline-date ">
+              <div className={"timeline-date "}>
                 <div className={"timeline-date-startDate-" + sprint.alignment}>{sprint.startDate}</div>
                 <div className={"timeline-date-divider-" + sprint.alignment}> - </div>
                 <div className={"timeline-date-endDate-" + sprint.alignment}>{sprint.endDate}</div>
@@ -125,7 +153,7 @@ function TimelineDevelopment() {
             </TimelineSeparator>
             <TimelineContent>
               <TimelineCard
-                alignment={sprint.alignment}
+                alignment={(size.width < 576) ? "" : sprint.alignment}
                 title={sprint.title}
                 subtitle={sprint.subtitle}
                 text={sprint.text}
