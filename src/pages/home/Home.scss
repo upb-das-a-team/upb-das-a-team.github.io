@@ -55,7 +55,8 @@
       .description {
 
         &-text {
-          font-weight: 300;
+          font-weight: 500;
+          margin: 0 0 2em 0;
         }
 
         .button-group {
@@ -75,6 +76,12 @@
             }
           }
         }
+      }
+
+      .emphasized {
+        font-weight: 900;
+        font-size: larger;
+        color: $primary-red;
       }
     }
 

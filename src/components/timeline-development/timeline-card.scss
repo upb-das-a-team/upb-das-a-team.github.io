@@ -5,10 +5,24 @@
 
   &-title {
 
+    @include media-breakpoint-down(sm) {
+      font-size: x-small;
+    }
+
   }
 
   &-subtitle {
 
+    @include media-breakpoint-down(sm) {
+      font-size: x-small;
+    }
+
+  }
+
+  &-body {
+    @include media-breakpoint-down(sm) {
+      padding: 0;
+    }
   }
 
   &-text {
@@ -17,7 +31,11 @@
     }
 
     @include media-breakpoint-down(md) {
-      font-size: small;
+      font-size: x-small;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: xx-small;
     }
   }
 }

@@ -24,9 +24,12 @@ function Home() {
           <span className="motto">Innovate, Connect, Inspire</span>
           <br />
           <div className="description">
-            <p className="description-text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea temporibus, accusantium, tempore recusandae atque quae molestiae voluptatum eius voluptatibus totam ad, expedita ut placeat facilis commodi! Dolores, vitae. Ea, cupiditate!
-            </p>
+            <div className="description-text">
+              Wir sind <span className="emphasized">Das A Team</span>.
+              <br />
+              Unsere Aufgabe ist das Spiel <span className="emphasized">Das Verrückte Labyrinth </span> 
+              im Rahmen der Softwaretechnikpraktikum der Universität Paderborn zu entwickeln.
+            </div>
             <div className="button-group">
               <Link to={'/project'}>
                 <div className="btn btn-primary-custom btn-project">PROJECT</div>

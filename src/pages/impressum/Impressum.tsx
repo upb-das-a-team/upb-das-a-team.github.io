@@ -27,7 +27,7 @@ function Impressum() {
             <div className="container content">
               <div className="row">
                 <div className="col-sm-12 col-md-12 col-lg-6">
-                  <h2>Haftungsausschluss - Disclaimer:</h2>
+                  <h2>Haftungsausschluss:</h2>
                   
                   <h4>Haftung für Inhalte</h4>
 
@@ -105,7 +105,7 @@ function Impressum() {
                       </div>
                       <div>
                         <p className="card-text">
-                          Kontaktperson: Robin Ekmen
+                          Kontaktperson: R. Ekmen
                           <em className="role">Scrum Master</em>
                         </p>
                       </div>
