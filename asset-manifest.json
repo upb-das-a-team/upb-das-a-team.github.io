@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.794423cf.css",
-    "main.js": "/static/js/main.3cd66907.js",
+    "main.css": "/static/css/main.9ca9c578.css",
+    "main.js": "/static/js/main.b1bac339.js",
     "static/js/787.19533579.chunk.js": "/static/js/787.19533579.chunk.js",
-    "static/media/marvin-meyer-SYTO3xs06fU-unsplash.jpg": "/static/media/marvin-meyer-SYTO3xs06fU-unsplash.63f3dda3eab35f8fcd02.jpg",
-    "static/media/logo-no-background.png": "/static/media/logo-no-background.0e49c03877e47720498b.png",
+    "static/media/mitchell-luo-z1c9juteR5c-unsplash.jpg": "/static/media/mitchell-luo-z1c9juteR5c-unsplash.dff150c1f8544982d2e6.jpg",
+    "static/media/background-maze-noise.png": "/static/media/background-maze-noise.d7e94b59028720a2ac8c.png",
+    "static/media/logo-icon-bg-white.svg": "/static/media/logo-icon-bg-white.60e46e726b95b98797b72d75c075f190.svg",
     "index.html": "/index.html",
-    "main.794423cf.css.map": "/static/css/main.794423cf.css.map",
-    "main.3cd66907.js.map": "/static/js/main.3cd66907.js.map",
+    "main.9ca9c578.css.map": "/static/css/main.9ca9c578.css.map",
+    "main.b1bac339.js.map": "/static/js/main.b1bac339.js.map",
     "787.19533579.chunk.js.map": "/static/js/787.19533579.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.794423cf.css",
-    "static/js/main.3cd66907.js"
+    "static/css/main.9ca9c578.css",
+    "static/js/main.b1bac339.js"
   ]
 }
