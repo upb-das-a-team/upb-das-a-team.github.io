@@ -3,6 +3,8 @@ import { AiOutlineCopyrightCircle, AiOutlineGitlab } from "react-icons/ai";
 import { ImSection } from "react-icons/im";
 import { Link } from "react-router-dom";
 
+import { nanoid } from 'nanoid';
+
 import MemberCard from "../../components/member-card/MemberCard";
 
 import './Team.scss';
@@ -152,12 +154,13 @@ function Team() {
             {members01.map((member) => {
               return(
                 <MemberCard
-                img={member.img}
-                name={member.name}
-                email={member.email}
-                gitlab={member.gitlab}
-                role={member.role}
-                motto={member.motto}
+                  key={nanoid()}
+                  img={member.img}
+                  name={member.name}
+                  email={member.email}
+                  gitlab={member.gitlab}
+                  role={member.role}
+                  motto={member.motto}
                 />
               )
             })}
@@ -167,12 +170,13 @@ function Team() {
             {members02.map((member) => {
               return(
                 <MemberCard
-                img={member.img}
-                name={member.name}
-                email={member.email}
-                gitlab={member.gitlab}
-                role={member.role}
-                motto={member.motto}
+                  key={nanoid()}
+                  img={member.img}
+                  name={member.name}
+                  email={member.email}
+                  gitlab={member.gitlab}
+                  role={member.role}
+                  motto={member.motto}
                 />
               )
             })}
@@ -182,12 +186,13 @@ function Team() {
             {members03.map((member) => {
               return(
                 <MemberCard
-                img={member.img}
-                name={member.name}
-                email={member.email}
-                gitlab={member.gitlab}
-                role={member.role}
-                motto={member.motto}
+                  key={nanoid()}
+                  img={member.img}
+                  name={member.name}
+                  email={member.email}
+                  gitlab={member.gitlab}
+                  role={member.role}
+                  motto={member.motto}
                 />
               )
             })}
@@ -197,12 +202,13 @@ function Team() {
             {members04.map((member) => {
               return(
                 <MemberCard
-                img={member.img}
-                name={member.name}
-                email={member.email}
-                gitlab={member.gitlab}
-                role={member.role}
-                motto={member.motto}
+                  key={nanoid()}
+                  img={member.img}
+                  name={member.name}
+                  email={member.email}
+                  gitlab={member.gitlab}
+                  role={member.role}
+                  motto={member.motto}
                 />
               )
             })}
@@ -212,12 +218,13 @@ function Team() {
             {members05.map((member) => {
               return(
                 <MemberCard
-                img={member.img}
-                name={member.name}
-                email={member.email}
-                gitlab={member.gitlab}
-                role={member.role}
-                motto={member.motto}
+                  key={nanoid()}
+                  img={member.img}
+                  name={member.name}
+                  email={member.email}
+                  gitlab={member.gitlab}
+                  role={member.role}
+                  motto={member.motto}
                 />
               )
             })}

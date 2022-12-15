@@ -20,10 +20,6 @@
     }
   }
 
-  &-endDate-right {
-    
-  }
-
   &-startDate-left {
     margin: 0;
   }
@@ -34,10 +30,6 @@
     @include media-breakpoint-down(sm) {
       display: none;
     }
-  }
-
-  &-endDate-left {
-
   }
 
   @include media-breakpoint-down(md) {

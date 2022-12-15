@@ -25,7 +25,7 @@ function AppRouter() {
         <Route path="/impressum" element={<Impressum />}></Route>
         <Route path="/*" element={<NotFoundPage />}></Route>
       </Routes>
-  </BrowserRouter>
+    </BrowserRouter>
   )
 }
 
